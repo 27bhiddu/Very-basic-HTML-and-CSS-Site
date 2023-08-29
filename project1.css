@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.headersection{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+.headersection img{
+
+  /*  background-color: antiquewhite(213, 212, 218); */ 
+    border-radius: 50%;
+    width: 6%;
+    height: auto;
+    transition: 1s;
+    
+}
+.headersection img:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.headersection h2{
+    margin-left:20px;
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.headersection h2:hover{
+    animation: title 5s ease-in infinite;
+
+}
+
+
+@keyframes title {
+        0%{
+             color:#f5f4ea;
+        }
+        25%{
+              color:#9fa671;
+        }
+        50%{
+            color:#d2de2c;
+        }
+        75%{
+            color:#bf7c1d;
+        }
+        100%{
+             color:#acbacb;
+        }
+
+ }
+
+
+ 
+/*
+Use the code below if you want to change logo in a text.
+.logo:hover{
+    animation: logocolor 5s infinite;
+}
+@keyframes logocolor{
+    0% {
+		color:ee7752;
+}
+    25%{
+        color:e73c7e;
+    }
+    50%{
+        color:23a6d5;
+    }
+    75%{
+        color:23d5ab;
+    }
+}*/
+
+.navbar{
+    padding: 15px;
+    flex:1;
+    text-align: right;
+    cursor: pointer;
+}
+.navbar ul{
+    flex:1;
+    text-align: right;
+}
+.navbar ul li{
+    display: inline;
+    margin-right:25px;
+    justify-content: space-between;
+}
+
+.navbar ul li a{
+    color:goldenrod;
+    font-size: 125%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.navbar ul li a:hover{
+    text-decoration:underline;
+    color:whitesmoke;
+
+}
+
+.content{
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+
+}
+
+.heading1{
+    font-size: 100px;
+}
+.para{
+    
+    padding: 11px;
+    font-size:25px;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding:20px;
+    font-size: larger;
+    font-style: italic;
+    border-radius: 25%;
+    background-color: transparent;
+    border-color: gold;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgba(218, 165, 32, 0.415);
+    
+}
